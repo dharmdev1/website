@@ -1,0 +1,214 @@
+
+  <!DOCTYPE html>
+  <html lang="en">
+  <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Generated Website</title>
+      <script src="https://cdn.tailwindcss.com"></script>
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+      <style>
+        body {
+          background-color: #ffffff;
+          color: #000000;
+          font-family: Arial, sans-serif;
+        }
+        
+   {
+    transition: outline 0.3s ease;
+  }
+   :hover {
+    outline: 2px dashed rgba(59, 130, 246, 0.5);
+    cursor: pointer;
+  }
+   .selected {
+    outline: 3px solid #3b82f6;
+    box-shadow: 0 0 0 4px rgba(59, 130, 246, 0.3);
+    position: relative;
+  }
+   .selected::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(59, 130, 246, 0.1);
+    pointer-events: none;
+  }
+
+  .mobile-view {
+    max-width: 375px !important;
+    overflow-x: hidden;
+  }
+
+  .mobile-view ,
+  .mobile-view [class*="grid"],
+  .mobile-view [class*="flex"] {
+    display: block !important;
+    width: 100% !important;
+    max-width: 100% !important;
+  }
+
+  .mobile-view  > *,
+  .mobile-view [class*="grid"] > *,
+  .mobile-view [class*="flex"] > * {
+    width: 100% !important;
+    max-width: 100% !important;
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+    margin-bottom: 1rem !important;
+  }
+
+  .tablet-view {
+    max-width: 820px;
+    margin: 0 auto;
+  }
+
+  .desktop-view {
+    max-width: 1366px;
+  }
+
+      </style>
+  </head>
+  <body>
+      <div class="website-contentdesktop-view"><div class="grid grid-cols-1 w-full h-full p-2 bg-gray-200" id="undefined" data-component="Grid container, light gray background, full viewport width and height, padding: 2rem"><div class="flex flex-col justify-center items-center w-full h-full bg-gray-900 p-1rem text-white" id="b26a44b0-b7d9-4bf4-afa0-350534809d11" data-component="Flex column layout, justify-center, align-items: center, dark blue background, full width, padding: 1rem"></div><div class="bg-light-blue flex justify-between items-center w-full p-1rem h-full" id="a4d491d2-137d-4819-a1d0-788a97f7a42a" data-component="Flex row layout, justify-between, align-items: center, light blue background, full width, padding: 1rem"></div><div id="84efb8dd-e085-4fe8-8838-d284486bf555" class="website-component" data-component="Dashboard" data-context="Header with username and avatar, unordered list with 4 buttons: Upload, Organize, Search, and Filter make it blue color"><header class="bg-orange-500 p-4 flex flex-row justify-between">
+    <div class="flex flex-row items-center">
+        <img src="https://images.unsplash.com/photo-1622815403367-212a90e0d24e?crop=entropy&amp;cs=srgb&amp;fm=jpg&amp;ixid=M3w0NTA4MTV8MHwxfHNlYXJjaHw4fHwlMjBwcm9maWxlJTJDJTIwcm91bmQlMkMlMjBzbWlsaW5nfGVufDB8fHx8MTcyNjU3MjM5MHww&amp;ixlib=rb-4.0.3&amp;q=85" alt="Avatar" class="w-12 h-12 mr-4 rounded-full object-cover">
+        <span class="text-2xl text-white font-bold">John Doe</span>
+    </div>
+    <ul class="flex space-x-4 text-white">
+        <li><a href="#" class="hover:text-blue-200">Upload</a></li>
+        <li><a href="#" class="hover:text-blue-200">Organize</a></li>
+        <li><a href="#" class="hover:text-blue-200">Search</a></li>
+        <li><a href="#" class="hover:text-blue-200">Filter</a></li>
+    </ul>
+</header></div><div id="7e96ee4d-1ff3-40b7-a9f1-6a9ad06747be" class="website-component" data-component="UploadSection" data-context="Input field for uploading study materials, button for submitting upload, and a progress bar for uploading files"><nav class="bg-orange-500 p-4 flex flex-row">
+    <h2 class="text-2xl text-white font-bold">Upload Section</h2>
+    <ul class="flex space-x-4 text-white">
+        <li><a href="#" class="hover:text-orange-700">Upload Study Materials</a></li>
+        <li><a href="#" class="hover:text-orange-700">View Study Materials</a></li>
+    </ul>
+</nav>
+
+<div class="bg-white rounded-lg shadow-md p-6">
+    <form class="flex flex-col">
+        <label for="upload-file" class="text-lg font-semibold">Select File:</label>
+        <input type="file" id="upload-file" class="bg-gray-200 p-2 rounded-md text-lg font-semibold">
+        <button class="bg-orange-500 text-white px-6 py-3 rounded-full font-semibold hover:bg-orange-700 transition duration-300">Upload</button>
+        <div class="progress-bar flex flex-row justify-center">
+            <div class="bg-orange-500 h-2 w-0 transition duration-300"></div>
+        </div>
+    </form>
+</div></div></div><div class="bg-gray-200 h-full flex flex-col items-center justify-center min-h-full pt-3rem w-full" id="e12dd7a5-2b37-4a13-a17a-4ac49e3069cd" data-component="Flex column layout, align-items: center, light gray background, full width, min-height: 70vh, padding: 3rem"><div id="7f41a763-7c0f-4fc4-82b3-b3835faa9490" class="website-component" data-component="StudyMaterialsList" data-context="Grid layout, 3 columns on desktop, 1 column on mobile, gap: 2rem. Each grid item contains a title, description, and buttons for favorite, reading list, and commenting"><div class="grid grid-cols-3 gap-2 md:gap-4 lg:gap-6 xl:gap-8 2xl:gap-10">
+    <div class="bg-white rounded-lg shadow-md p-6">
+        <h3 class="text-lg font-semibold mb-2">Introduction to Programming</h3>
+        <p class="text-gray-600">Learn the basics of programming and get started with coding.</p>
+        <div class="flex justify-end">
+            <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">Favorite</button>
+            <button class="bg-gray-400 hover:bg-gray-600 text-white font-bold py-2 px-4 rounded">Add to Reading List</button>
+            <button class="bg-orange-500 hover:bg-orange-700 text-white font-bold py-2 px-4 rounded">Comment</button>
+        </div>
+    </div>
+    <div class="bg-white rounded-lg shadow-md p-6">
+        <h3 class="text-lg font-semibold mb-2">Data Structures and Algorithms</h3>
+        <p class="text-gray-600">Master data structures and algorithms to solve complex problems.</p>
+        <div class="flex justify-end">
+            <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">Favorite</button>
+            <button class="bg-gray-400 hover:bg-gray-600 text-white font-bold py-2 px-4 rounded">Add to Reading List</button>
+            <button class="bg-orange-500 hover:bg-orange-700 text-white font-bold py-2 px-4 rounded">Comment</button>
+        </div>
+    </div>
+    <div class="bg-white rounded-lg shadow-md p-6">
+        <h3 class="text-lg font-semibold mb-2">Web Development</h3>
+        <p class="text-gray-600">Learn the basics of web development and build your own website.</p>
+        <div class="flex justify-end">
+            <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">Favorite</button>
+            <button class="bg-gray-400 hover:bg-gray-600 text-white font-bold py-2 px-4 rounded">Add to Reading List</button>
+            <button class="bg-orange-500 hover:bg-orange-700 text-white font-bold py-2 px-4 rounded">Comment</button>
+        </div>
+    </div>
+    <div class="bg-white rounded-lg shadow-md p-6 md:col-span-3 lg:col-span-2 xl:col-span-1 2xl:col-span-1">
+        <h3 class="text-lg font-semibold mb-2">Mathematics for Computer Science</h3>
+        <p class="text-gray-600">Learn the mathematical concepts used in computer science.</p>
+        <div class="flex justify-end">
+            <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">Favorite</button>
+            <button class="bg-gray-400 hover:bg-gray-600 text-white font-bold py-2 px-4 rounded">Add to Reading List</button>
+            <button class="bg-orange-500 hover:bg-orange-700 text-white font-bold py-2 px-4 rounded">Comment</button>
+        </div>
+    </div>
+    <div class="bg-white rounded-lg shadow-md p-6 md:col-span-3 lg:col-span-2 xl:col-span-1 2xl:col-span-1">
+        <h3 class="text-lg font-semibold mb-2">Computer Networks</h3>
+        <p class="text-gray-600">Learn the basics of computer networks and how they work.</p>
+        <div class="flex justify-end">
+            <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">Favorite</button>
+            <button class="bg-gray-400 hover:bg-gray-600 text-white font-bold py-2 px-4 rounded">Add to Reading List</button>
+            <button class="bg-orange-500 hover:bg-orange-700 text-white font-bold py-2 px-4 rounded">Comment</button>
+        </div>
+    </div>
+</div></div><div id="463b6c13-b328-4175-91b2-0c5350ca7f4b" class="website-component" data-component="SearchBar" data-context="Input field for searching study materials, button for submitting search, and a dropdown list for filtering categories and tags"><nav class="bg-orange-500 p-4 flex flex-row justify-between">
+    <h3 class="text-2xl text-white font-bold mb-4">Search Study Materials</h3>
+    <form class="flex flex-row items-center">
+        <input type="text" class="bg-white border border-gray-400 p-2 pl-6 w-full rounded-lg" placeholder="Search for study materials...">
+        <button class="bg-orange-600 text-white px-4 py-2 rounded-full font-semibold hover:bg-orange-700 transition duration-300">Search</button>
+    </form>
+    <div class="flex flex-col ml-4">
+        <h4 class="text-lg text-white font-bold mb-2">Filter by:</h4>
+        <ul class="flex flex-wrap space-x-4">
+            <li><a href="#" class="text-gray-600 hover:text-orange-500">All</a></li>
+            <li><a href="#" class="text-gray-600 hover:text-orange-500">Categories</a>
+                <ul class="flex flex-col space-y-2">
+                    <li><a href="#" class="text-gray-600 hover:text-orange-500">Math</a></li>
+                    <li><a href="#" class="text-gray-600 hover:text-orange-500">Science</a></li>
+                    <li><a href="#" class="text-gray-600 hover:text-orange-500">English</a></li>
+                </ul>
+            </li>
+            <li><a href="#" class="text-gray-600 hover:text-orange-500">Tags</a>
+                <ul class="flex flex-col space-y-2">
+                    <li><a href="#" class="text-gray-600 hover:text-orange-500">Algebra</a></li>
+                    <li><a href="#" class="text-gray-600 hover:text-orange-500">Physics</a></li>
+                    <li><a href="#" class="text-gray-600 hover:text-orange-500">Grammar</a></li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+</nav></div></div><div class="bg-gray-800 flex justify-between items-center w-full h-full p-1rem" id="f9954587-67b6-4cad-8b9f-e9a1bf7ed2ec" data-component="Flex row layout, justify-between, align-items: center, dark gray background, full width, padding: 1rem"><div id="33d19f7a-0be0-4bb8-955d-e2c4616cedd9" class="website-component" data-component="Statistics" data-context="Header with title 'Your Study Progress', 3 sections for Time Spent, Study Materials Added, and Goals Achieved"><header class="bg-orange-500 p-4 flex flex-row justify-between">
+    <h2 class="text-3xl font-bold text-white">Your Study Progress</h2>
+    <ul class="flex space-x-4 text-white">
+        <li><a href="#" class="hover:text-orange-200">Home</a></li>
+        <li><a href="#" class="hover:text-orange-200">About</a></li>
+        <li><a href="#" class="hover:text-orange-200">Services</a></li>
+        <li><a href="#" class="hover:text-orange-200">Contact</a></li>
+    </ul>
+</header>
+
+<section class="bg-white rounded-lg shadow-md p-6">
+    <h3 class="text-xl font-semibold mb-2">Time Spent</h3>
+    <p class="text-gray-600">You have spent <span class="font-bold text-blue-500">2 hours</span> studying today.</p>
+</section>
+
+<section class="bg-white rounded-lg shadow-md p-6">
+    <h3 class="text-xl font-semibold mb-2">Study Materials Added</h3>
+    <p class="text-gray-600">You have added <span class="font-bold text-blue-500">10</span> new study materials today.</p>
+</section>
+
+<section class="bg-white rounded-lg shadow-md p-6">
+    <h3 class="text-xl font-semibold mb-2">Goals Achieved</h3>
+    <p class="text-gray-600">You have achieved <span class="font-bold text-blue-500">50%</span> of your daily goals.</p>
+</section>
+
+<footer class="bg-gray-200 w-full">
+    <div class="flex justify-center">
+        <a href="#" class="text-2xl text-gray-600 hover:text-blue-500 flex flex-col items-center"><i class="fab fa-twitter"></i></a>
+        <a href="#" class="text-2xl text-gray-600 hover:text-blue-500 flex flex-col items-center"><i class="fab fa-facebook"></i></a>
+        <a href="#" class="text-2xl text-gray-600 hover:text-blue-500 flex flex-col items-center"><i class="fab fa-instagram"></i></a>
+        <a href="#" class="text-2xl text-gray-600 hover:text-blue-500 flex flex-col items-center"><i class="fab fa-linkedin"></i></a>
+    </div>
+</footer></div></div></div>
+      <script>
+        // Force Tailwind to apply styles
+        document.body.classList.add('tailwind-applied');
+      </script>
+  </body>
+  </html>
+      
